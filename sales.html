@@ -11,7 +11,7 @@
 <body>
     <table>
         <thead>
-            <tr id="cookie-header">
+            <tr id="table-header">
                 <th>Location</th>
                 <th>6am</th>                
                 <th>7am</th>                
@@ -33,16 +33,46 @@
 
         </thead>
 
-        <tbody id="data-body">
-
+        <tbody id="table-body">
+        
         </tbody>
 
         <tfoot>
-            <tr>
+            <tr id="table-footer">
                 <td>Total</td>
+                <td id="tf-0"></td>
+                <td id="tf-1"></td>
+                <td id="tf-2"></td>
+                <td id="tf-3"></td>
+                <td id="tf-4"></td>
+                <td id="tf-5"></td>
+                <td id="tf-6"></td>
+                <td id="tf-7"></td>
+                <td id="tf-8"></td>
+                <td id="tf-9"></td>
+                <td id="tf-10"></td>
+                <td id="tf-11"></td>
+                <td id="tf-12"></td>
+                <td id="tf-13"></td>
+                <td id="tf-14"></td>
+                <td id="tf-15"></td>
             </tr>
         </tfoot>
     </table>
+
+    <form id="cookie-form">
+        Location:
+        <input type="text" name="location" value="portland">
+        Minimum Customers Per Hour
+        <input type="number" name="min" value="1">
+        Maximum Customers Per Hour
+        <input type="number" name="max" value="20">
+        Average Cookies Per Sale
+        <input type="number" name="cookies" value="3">
+        
+        <!-- submit button -->
+        <button type="submit">Submit</button>
+        </form>
 
     <script src="objects.js"></script>
     <script src="app.js"></script>
